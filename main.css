@@ -1,11 +1,18 @@
 body {
   padding: 0;
   margin: 0;
-  background: #f2f6e9;
+  background: #f2f2f2;
 }
+
+.root {
+  --primary: #46adb4;
+  --secondary: #000;
+  --highlight: #000;
+}
+
 /*--- navigation bar ---*/
 .navbar {
-  background:#46adb4;
+  background: var(--primary);
 }
 .nav-link,
 .navbar-brand {
@@ -38,6 +45,16 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.rounded {
+  border-radius: 50px;
+}
+
+.color-invert {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/*--- description ---*/
 .description {
   left: 50%;
   position: absolute;
@@ -46,7 +63,7 @@ body {
   text-align: center;
 }
 .description h1 {
-  color: #46adb4;
+  color: var(--primary);
 }
 .description p {
   color: #fff;
@@ -54,8 +71,8 @@ body {
   line-height: 1.5;
 }
 .description button {
-  border:1px solid #46adb4;
-  background:#46adb4;
+  border:1px solid var(--primary);
+  background:var(--primary);
   border-radius: 0;
   color:#fff;
 }
@@ -65,6 +82,7 @@ body {
   color:#000;
 }
 
+/*--- features ---*/
 .features {
   margin: 4em auto;
   padding: 1em;
@@ -88,8 +106,8 @@ body {
   border-radius: 0;
 }
 .features .btn {
-  background-color: #589b37;
-  border: 1px solid #589b37;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
   color: #fff;
   margin-top: 20px;
 }
@@ -98,6 +116,7 @@ body {
   border: 1px solid #333;
 }
 
+/*--- page footer ---*/
 .page-footer {
   background-color: #222;
   color: #ccc;
