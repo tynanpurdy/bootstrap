@@ -1,0 +1,72 @@
+.root {
+  --primary: #46adb4;
+  --secondary: #000;
+  --highlight: #000;
+}
+
+body {font-family: 'Fira Sans'}
+
+/* text styles */
+p {font-weight: normal;}
+h1 {font-weight: bold;}
+
+.rounded {
+  border-radius: 50px;
+}
+
+.color-invert {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans/FiraSans-Regular.ttf");
+  font-weight: normal;
+  font-variant-ligatures: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans/FiraSans-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans/FiraSans-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans/FiraSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*--- navigation bar ---*/
+.navbar {
+  background: var(--primary);
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+  font-family: 'Fira Sans';
+}
+.nav-link:hover {
+  animation-name: nav-link-animation;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  /*color: #000;*/
+}
+@keyframes nav-link-animation{
+  from {color: #fff;}
+  to {color: #000;}
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
