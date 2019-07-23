@@ -1,11 +1,10 @@
 body {
   padding: 0;
   margin: 0;
-  background: #f2f2f2;
+  background: var(--light);
 }
 
 .header {
-  background-image: url('imgs/header-background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +22,7 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/*--- description ---*/
+/* description */
 .description {
   left: 50%;
   position: absolute;
@@ -32,7 +31,7 @@ body {
   text-align: center;
 }
 .description h1 {
-  color: var(--primary);
+  color: var(--light);
 }
 .description p {
   color: #fff;
@@ -40,26 +39,25 @@ body {
   line-height: 1.5;
 }
 .description button {
-  border:1px solid var(--primary);
+  border: 1px var(--secondary);
   background:var(--primary);
-  border-radius: 0;
+  border-radius: 0.5em;
   color:#fff;
 }
 .description button:hover {
-  border:1px solid #fff;
-  background:#fff;
-  color:#000;
+  border: 1px var(--secondary);
+  background: var(--secondary);
+  color:#fff;
 }
 
-/*--- features ---*/
+/* features */
 .features {
   margin: 4em auto;
   padding: 1em;
   position: relative;
 }
 .feature-title {
-  color: #333;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;

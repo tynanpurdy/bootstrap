@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
 
-  <title>Bootstrap Tutorial Sample Page</title>
+  <title>Tynan Purdy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
+
   <nav class="navbar navbar-expand-md">
-  <a class="navbar-brand" href="#">Logo</a>
+  <a class="navbar-brand" href="#">TYNAN <strong>PURDY</strong></a>
   <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
@@ -31,10 +32,11 @@
   </div>
   </nav>
 
-  <header class="page-header header container-fluid">
+  <header  class="parallax-window page-header header container-fluid"
+  data-parallax="scroll" data-image-src="imgs/header-background.jpg">
     <div class="overlay"></div>
     <div class="description">
-      <h1>Welcome to the Landing Page!</h1>
+      <h1>TYNAN <strong>PURDY</strong></h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
       <button class="btn btn-outline-secondary btn-lg">Tell Me More!</button>
     </div>
@@ -68,16 +70,20 @@
     </div>
   </div>
 
+  <div>
+
+  </div>
+
   <footer class="page-footer">
     <div class="container">
       <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-12">
-        <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+        <h3 class="text-uppercase font-weight-bold">Additional Information</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12">
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <h3 class="text-uppercase font-weight-bold">Contact</h6>
         <p>42 Clarendon Ave, Avondale Estates, Georgia
         <br/>tynanpurdy@gmail.com
         <br/>404 408 5556
@@ -88,6 +94,7 @@
 
   <script src="bootstrap/jquery-3.4.1.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/parallax.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
