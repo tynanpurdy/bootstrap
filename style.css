@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Fira Sans';
-  color: #fff;
-  background: var(--primary);
+  /* color: #fff;
+  background: var(--primary); */
 }
 
 /* text styles */
@@ -32,9 +32,36 @@ h3 {
 
 .dark {
   background: var(--primary);
-  back
   background-size: cover;
   color: #fff;
+}
+
+.magenta {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.blue {
+  background: var(--tertiary);
+  color: #fff;
+}
+
+.slanted {
+  position: relative;
+  z-index: 1;
+}
+.slanted:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 /* navigation bar */
